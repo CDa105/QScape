@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Proxioma';
+    src: url(proximanova_black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Proxioma';
+    src: url(proximanova_regular.ttf);
+    font-weight: 400;
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+*{
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+}
+title, script{
+    display: none;
+}
+body{
+    background-color: #8934C2;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #fff;
+    background-color: #8934C2;
+    margin: auto;
+}
+.header_logo{
+    margin-left: 20px;
+    display: flex;
+}
+.header_logo nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+}
+.nav_link a{
+    height: auto;
+    text-align: center;
+    width: auto;
+    padding: 25px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+.nav_link a:hover{
+    color: rgb(245, 206, 206);
+    background-color: rgb(140, 34, 167);
+}
+.menu{
+    display: none;
+}
+
+/*main*/
+
+main{
+    margin: auto;
+}
+
+/*Главная страница*/
+
+.glavnaya{
+    max-width: 1440px;
+    margin: auto;
+    padding: 100px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.glav_text{
+    width: 100%;
+    font-size: 40px;
+}
+.glav_img{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.glav_img img{
+    width: 80%;
+}
+
+/*Портфолио*/
+
+.portfolio{
+    background-color: #fff;
+    margin: auto;
+    padding: 50px 20px;
+}
+.portfolio_width{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+.portfolio_name{
+    color: #000;
+    font-family: 'Proxioma';
+    font-weight: 400;
+    font-size: 50px;
+}
+.portfolio_content{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio_link{
+    margin-top: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #692994;
+    width: 45%;
+}
+.portfolio_img{
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+}
+.portfolio_text{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    font-size: 28px;
+}
+
+/*О нас*/
+
+.kompaniya{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.komp_img{
+    width: 100%;
+}
+.komp_img img{
+    width: 100%;
+}
+.komp_text{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+}
+.kompaniya_name{
+    font-size: 42px;
+}
+.komp_name{
+    margin-top: -60px;
+    font-size: 24px;
+}
+.komp_content{
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+/*footer*/
+footer{
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #000;
+}
+.footer_contact{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+footer div, footer a{
+    font-family: 'Proxioma';
+    color: #000;
+    font-weight: 400;
+}
+.foot_content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+}
+.foot_name{
+    margin-top: -40px;
+    font-size: 32px;
+}
+.contact{
+    width: 96%;
+    justify-content: space-between;
+    display: flex;
+}
+.contact_name{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.contact_link{
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.contact_link:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+}
+
+/*adaptiv*/
+
+@media only screen and (max-width:1024px) {
+    .glav_text{
+        font-size: 28px;
+    }
+    .footer_contact{
+        flex-direction: column;
+    }
+    iframe{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .foot_name{
+        margin-top: 10px;
+    }
+    .komp_img{
+        width: 80%;
+    }
+    .comp_content{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .kompaniya_name{
+        font-style: 28px;
+        line-height: 30px;
+    }
+    .komp_name{
+        margin-top: 10px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .komp_content{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .kompaniya{
+        flex-direction: column-reverse;
+    }
+    .komp_img{
+        margin: auto;
+        width: 70%;
+    }
+    .portfolio_text{
+        font-size: 20px;
+    }
+    .glavnaya{
+        display: block;
+    }
+    .glav_img{
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+    }
+    .nav_link{
+        display: none;
+    }
+}
+@media only screen and (max-width:768px){
+    .portfolio_link{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .portfolio{
+        padding: 30px 0;
+    }
+    .portfolio_name{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .contact_link{
+        font-size: 16px;
+    }
+    .contact_name{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:425px){
+    .glav_text{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .glavnaya{
+        padding: 50px 20px;
+    }
+    .contact{
+        display: block;
+    }
+    .contact_link{
+        margin-top: 10px;
+    }
+    footer{
+        padding: 50px 10px;
+    }
+    .komp_text{
+        padding: 20px 10px;
+    }
+    .komp_name{
+        margin-top: 15px;
+    }
+}
